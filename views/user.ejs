@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/search" method="get">
+      <input
+        type="text"
+        placeholder="회원 검색"
+        name="user"
+        id="user"
+        required
+      />
+
+      <button type="submit">회원정보 검색</button>
+    </form>
+
+    <br />
+    <hr />
+
+    <h4>회원정보 등록</h4>
+
+    <form action="/userlist" method="post">
+      <input
+        type="text"
+        placeholder="이메일을 작성해 주세요."
+        name="email"
+        required
+      />
+      <input
+        type="password"
+        placeholder="password 입력해 주세요."
+        name="pw"
+        required
+      />
+      <input
+        type="text"
+        placeholder="회원이름을 작성해 주세요."
+        name="userName"
+        required
+      />
+      <input
+        type="number"
+        placeholder="나이를 작성해 주세요."
+        name="age"
+        required
+      />
+      <button type="submit">회원 등록</button>
+    </form>
+
+    <script src="/js/user.js"></script>
+  </body>
+</html>

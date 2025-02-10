@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>form 전송 실습</h3>
+    <h4>GET 요청</h4>
+
+    <!-- getForm으로 보냄 -->
+    <form action="/getForm" method="get">
+      <!-- required: 작성되지 않으면 넘어가지 않음 -->
+      <input type="text" placeholder="id를 입력해 주세요." name="id" required />
+      <input
+        type="password"
+        placeholder="password를 입력해 주세요."
+        name="pw"
+        required
+      />
+      <!-- submit: 요청을 보냄 -->
+      <button type="submit">get 등록</button>
+    </form>
+
+    <h4>POST 요청</h4>
+
+    <!-- getForm으로 보냄 -->
+    <form action="/postForm" method="post">
+      <!-- required: 작성되지 않으면 넘어가지 않음 -->
+      <input type="text" placeholder="id를 입력해 주세요." name="id" required />
+      <input
+        type="password"
+        placeholder="password를 입력해 주세요."
+        name="pw"
+        required
+      />
+      <!-- submit: 요청을 보냄 -->
+      <button type="submit">post 등록</button>
+    </form>
+  </body>
+</html>
