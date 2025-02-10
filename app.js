@@ -65,14 +65,8 @@ app.get("/userinfo", (req, res) => {
 });
 
 app.get("/search", (req, res) => {
-  const user = req.query;
-  const userinfoArr = JSON.parse(localStorage.getItem("userInfo")) || [];
-
-  const filteredUsers = userinfoArr.filter((info) =>
-    user.userName.includes(user)
-  );
-
-  res.render("search", { users: filteredUsers });
+  data = req.query;
+  res.render("search");
 });
 
 app.get("/test", (req, res) => {

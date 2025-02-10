@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="/css/search.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>회원 목록</title>
@@ -12,16 +13,9 @@
         <th>회원이름</th>
         <th>나이</th>
       </tr>
-      <tbody id="userTable">
-        <% users.forEach(user => { %>
-        <tr>
-          <td><%= user.email %></td>
-          <td><%= user.userName %></td>
-          <td><%= user.age %></td>
-        </tr>
-        <% }); %>
-      </tbody>
+      <tbody id="userTable"></tbody>
     </table>
     <a href="/user">홈으로 이동</a>
   </body>
+  <script src="/js/search.js"></script>
 </html>
