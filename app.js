@@ -69,6 +69,12 @@ app.get("/search", (req, res) => {
   res.render("search");
 });
 
+//회원가입
+app.get("/form", (req, res) => {
+  res.render("form");
+});
+
+// 연습
 app.get("/test", (req, res) => {
   res.render("test");
 });
